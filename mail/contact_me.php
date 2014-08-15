@@ -13,7 +13,7 @@ if(empty($_POST['name'])  		||
    }
 	
 $sendgrid = new SendGrid('azure_4410e570cbd4ca0c77e546e02527857c@azure.com', 'ITKwgo7Vcjv400B');
-return ($sendgrid);
+var_dump ($sendgrid);
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $phone = $_POST['phone'];
