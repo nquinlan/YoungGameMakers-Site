@@ -33,6 +33,6 @@ $email->addTo($to)->
        setSubject('[Young Makers Inquiry]')->
        setText($email_body)->
 $sendgrid->send($email);
-       
+return ($sendgrid);
 return true;			
 ?>
