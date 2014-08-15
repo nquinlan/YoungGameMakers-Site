@@ -24,10 +24,11 @@ $email = new SendGrid\Email();
 $email->addTo('stacey.mulcahy@gmail.com')->
          setFrom('stacey.mulcahy@gmail.com')->
          setSubject('[Young Makers Inquiry]')->
-         setText('stuff things');
+         setText('stuff things')->
+         setHtml("<b>Stuff things</b>")
 var_dump($email);
 
-$response = $sendgrid->send($email);
+$response = $sendgrid->smtp->send($email);
 var_dump($response);
 print ("stacey this has been updated");
 ?>
