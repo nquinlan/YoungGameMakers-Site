@@ -26,13 +26,12 @@ $email_body = "You have received a new message from your website contact form.\n
 
 
 $email = new SendGrid\Email();
-var_dump($email);
+
 $email->addTo($to)->
       
-       setFrom($email_address)->
+       setFrom('stacey.mulcahy@gmail.com')->
        setSubject('[Young Makers Inquiry]')->
-       setText($email_body)->
-$sendgrid->send($email);
-return ($sendgrid);
-return true;			
+       setText('stuff things')->
+$response = $sendgrid->send($email);
+var_dump($response);
 ?>
