@@ -31,7 +31,8 @@ $email->addTo($to)->
       
        setFrom('stacey.mulcahy@gmail.com')->
        setSubject('[Young Makers Inquiry]')->
-       setText('stuff things')->
+       setText('stuff things');
+       
 $response = $sendgrid->send($email);
 var_dump($response);
 ?>
