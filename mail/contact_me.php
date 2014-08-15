@@ -9,10 +9,11 @@ if(empty($_POST['name'])  		||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
 	echo "No arguments Provided!";
-	return false;
+	//return false;
    }
 	
 $sendgrid = new SendGrid('azure_4410e570cbd4ca0c77e546e02527857c@azure.com', 'ITKwgo7Vcjv400B');
+return ($sendgrid);
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $phone = $_POST['phone'];
