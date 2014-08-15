@@ -21,7 +21,7 @@ $message = $_POST['message'];
 	
 
 $email = new SendGrid\Email();
-
+$email->to('stacey.mulcahy@gmail.com')->
 $email->addTo('stacey.mulcahy@gmail.com')->
          setFrom('stacey.mulcahy@gmail.com')->
        setSubject('[Young Makers Inquiry]')->
