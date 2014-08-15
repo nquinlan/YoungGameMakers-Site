@@ -22,10 +22,10 @@ $message = $_POST['message'];
 
 $email = new SendGrid\Email();
 $email->to('stacey.mulcahy@gmail.com')->
-$email->addTo('stacey.mulcahy@gmail.com')->
+         addTo('stacey.mulcahy@gmail.com')->
          setFrom('stacey.mulcahy@gmail.com')->
-       setSubject('[Young Makers Inquiry]')->
-       setText('stuff things');
+         setSubject('[Young Makers Inquiry]')->
+         setText('stuff things');
 var_dump($email);
 
 $response = $sendgrid->send($email);
