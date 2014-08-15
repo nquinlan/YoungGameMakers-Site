@@ -902,5 +902,32 @@ hr{
 
 .register{
     margin-top:15px;
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
+
+#schedule{
+    background-color:#3B53FE;
+}
+#schedule p, section#schedule h2, section#schedule h3{
+    color:#fff;
+}
+
+section#schedule h2, section#schedule h3.text-muted{
+    color:#FED13B;
+}
+
+section#sponsors{
+
+    background-color:#556AFF;
+}
+
+#sponsors h2.section-heading, p{
+
+    color:#fff;
+}
+
+
+
+
+
+
