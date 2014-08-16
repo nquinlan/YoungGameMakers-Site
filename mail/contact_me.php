@@ -25,7 +25,7 @@ $email->addTo('stacey.mulcahy@gmail.com')->
          setFrom('stacey.mulcahy@gmail.com')->
          setSubject('[Young Makers Inquiry]')->
          setText('stuff things')->
-         setHtml("<b>Stuff things</b>")
+         setHtml("<b>Stuff things</b>");
 var_dump($email);
 
 $response = $sendgrid->smtp->send($email);
