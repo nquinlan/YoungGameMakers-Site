@@ -28,7 +28,7 @@ $email->addTo('stacey.mulcahy@gmail.com')->
          setHtml("<b>Stuff things</b>");
 var_dump($email);
 
-$response = $sendgrid->smtp->send($email);
+$response = $sendgrid->send($email);
 var_dump($response);
 print ("stacey this has been updated");
 ?>
